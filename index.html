@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>골기 집패 패널</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <button type="button" id="reset-btn" class="reset-btn">초기화</button>
+      <div class="summary-row" aria-label="요약 정보">
+        <div class="summary-item" data-rank="鹰"><span>鹰</span><strong>0</strong></div>
+        <div class="summary-item" data-rank="大王"><span>大王</span><strong>0</strong></div>
+        <div class="summary-item" data-rank="小王"><span>小王</span><strong>0</strong></div>
+        <div class="summary-item" data-rank="2"><span>2</span><strong>0</strong></div>
+        <div class="summary-item" data-rank="A"><span>A</span><strong>0</strong></div>
+        <div class="summary-item" data-rank="K"><span>K</span><strong>0</strong></div>
+        <div class="summary-item" data-rank="Q"><span>Q</span><strong>0</strong></div>
+        <div class="summary-item" data-rank="J"><span>J</span><strong>0</strong></div>
+        <div class="summary-item" data-rank="10"><span>10</span><strong>0</strong></div>
+        <div class="summary-item" data-rank="9"><span>9</span><strong>0</strong></div>
+        <div class="summary-item" data-rank="8"><span>8</span><strong>0</strong></div>
+        <div class="summary-item" data-rank="7"><span>7</span><strong>0</strong></div>
+        <div class="summary-item" data-rank="6"><span>6</span><strong>0</strong></div>
+        <div class="summary-item" data-rank="5"><span>5</span><strong>0</strong></div>
+        <div class="summary-item" data-rank="4"><span>4</span><strong>0</strong></div>
+        <div class="summary-item" data-rank="3"><span>3</span><strong>0</strong></div>
+      </div>
+    </header>
+
+    <section class="board" aria-label="패널 보드">
+      <div class="seat-row">
+        <article class="seat">
+          <header class="seat-header">
+            <span>上联</span>
+            <span class="seat-score"><strong>52</strong></span>
+          </header>
+          <div class="card-grid">
+            <div class="card" data-name="鹰"><span class="label">鹰</span><span class="count">0</span></div>
+            <div class="card" data-name="大王"><span class="label">大王</span><span class="count">0</span></div>
+            <div class="card" data-name="小王"><span class="label">小王</span><span class="count">0</span></div>
+            <div class="card" data-name="2"><span class="label">2</span><span class="count">0</span></div>
+            <div class="card" data-name="A"><span class="label">A</span><span class="count">0</span></div>
+            <div class="card" data-name="K"><span class="label">K</span><span class="count">0</span></div>
+            <div class="card" data-name="Q"><span class="label">Q</span><span class="count">0</span></div>
+            <div class="card" data-name="J"><span class="label">J</span><span class="count">0</span></div>
+            <div class="card" data-name="10"><span class="label">10</span><span class="count">0</span></div>
+            <div class="card" data-name="9"><span class="label">9</span><span class="count">0</span></div>
+            <div class="card" data-name="8"><span class="label">8</span><span class="count">0</span></div>
+            <div class="card" data-name="7"><span class="label">7</span><span class="count">0</span></div>
+            <div class="card" data-name="6"><span class="label">6</span><span class="count">0</span></div>
+            <div class="card" data-name="5"><span class="label">5</span><span class="count">0</span></div>
+            <div class="card" data-name="4"><span class="label">4</span><span class="count">0</span></div>
+            <div class="card" data-name="3"><span class="label">3</span><span class="count">0</span></div>
+          </div>
+        </article>
+
+        <article class="seat">
+          <header class="seat-header">
+            <span>对家</span>
+            <span class="seat-score"><strong>52</strong></span>
+          </header>
+          <div class="card-grid">
+            <div class="card" data-name="鹰"><span class="label">鹰</span><span class="count">0</span></div>
+            <div class="card" data-name="大王"><span class="label">大王</span><span class="count">0</span></div>
+            <div class="card" data-name="小王"><span class="label">小王</span><span class="count">0</span></div>
+            <div class="card" data-name="2"><span class="label">2</span><span class="count">0</span></div>
+            <div class="card" data-name="A"><span class="label">A</span><span class="count">0</span></div>
+            <div class="card" data-name="K"><span class="label">K</span><span class="count">0</span></div>
+            <div class="card" data-name="Q"><span class="label">Q</span><span class="count">0</span></div>
+            <div class="card" data-name="J"><span class="label">J</span><span class="count">0</span></div>
+            <div class="card" data-name="10"><span class="label">10</span><span class="count">0</span></div>
+            <div class="card" data-name="9"><span class="label">9</span><span class="count">0</span></div>
+            <div class="card" data-name="8"><span class="label">8</span><span class="count">0</span></div>
+            <div class="card" data-name="7"><span class="label">7</span><span class="count">0</span></div>
+            <div class="card" data-name="6"><span class="label">6</span><span class="count">0</span></div>
+            <div class="card" data-name="5"><span class="label">5</span><span class="count">0</span></div>
+            <div class="card" data-name="4"><span class="label">4</span><span class="count">0</span></div>
+            <div class="card" data-name="3"><span class="label">3</span><span class="count">0</span></div>
+          </div>
+        </article>
+
+        <article class="seat">
+          <header class="seat-header">
+            <span>下联</span>
+            <span class="seat-score"><strong>52</strong></span>
+          </header>
+          <div class="card-grid">
+            <div class="card" data-name="鹰"><span class="label">鹰</span><span class="count">0</span></div>
+            <div class="card" data-name="大王"><span class="label">大王</span><span class="count">0</span></div>
+            <div class="card" data-name="小王"><span class="label">小王</span><span class="count">0</span></div>
+            <div class="card" data-name="2"><span class="label">2</span><span class="count">0</span></div>
+            <div class="card" data-name="A"><span class="label">A</span><span class="count">0</span></div>
+            <div class="card" data-name="K"><span class="label">K</span><span class="count">0</span></div>
+            <div class="card" data-name="Q"><span class="label">Q</span><span class="count">0</span></div>
+            <div class="card" data-name="J"><span class="label">J</span><span class="count">0</span></div>
+            <div class="card" data-name="10"><span class="label">10</span><span class="count">0</span></div>
+            <div class="card" data-name="9"><span class="label">9</span><span class="count">0</span></div>
+            <div class="card" data-name="8"><span class="label">8</span><span class="count">0</span></div>
+            <div class="card" data-name="7"><span class="label">7</span><span class="count">0</span></div>
+            <div class="card" data-name="6"><span class="label">6</span><span class="count">0</span></div>
+            <div class="card" data-name="5"><span class="label">5</span><span class="count">0</span></div>
+            <div class="card" data-name="4"><span class="label">4</span><span class="count">0</span></div>
+            <div class="card" data-name="3"><span class="label">3</span><span class="count">0</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="seat-row">
+        <article class="seat">
+          <header class="seat-header">
+            <span>上家</span>
+            <span class="seat-score"><strong>52</strong></span>
+          </header>
+          <div class="card-grid">
+            <div class="card" data-name="鹰"><span class="label">鹰</span><span class="count">0</span></div>
+            <div class="card" data-name="大王"><span class="label">大王</span><span class="count">0</span></div>
+            <div class="card" data-name="小王"><span class="label">小王</span><span class="count">0</span></div>
+            <div class="card" data-name="2"><span class="label">2</span><span class="count">0</span></div>
+            <div class="card" data-name="A"><span class="label">A</span><span class="count">0</span></div>
+            <div class="card" data-name="K"><span class="label">K</span><span class="count">0</span></div>
+            <div class="card" data-name="Q"><span class="label">Q</span><span class="count">0</span></div>
+            <div class="card" data-name="J"><span class="label">J</span><span class="count">0</span></div>
+            <div class="card" data-name="10"><span class="label">10</span><span class="count">0</span></div>
+            <div class="card" data-name="9"><span class="label">9</span><span class="count">0</span></div>
+            <div class="card" data-name="8"><span class="label">8</span><span class="count">0</span></div>
+            <div class="card" data-name="7"><span class="label">7</span><span class="count">0</span></div>
+            <div class="card" data-name="6"><span class="label">6</span><span class="count">0</span></div>
+            <div class="card" data-name="5"><span class="label">5</span><span class="count">0</span></div>
+            <div class="card" data-name="4"><span class="label">4</span><span class="count">0</span></div>
+            <div class="card" data-name="3"><span class="label">3</span><span class="count">0</span></div>
+          </div>
+        </article>
+
+        <article class="seat seat-self">
+          <header class="seat-header">
+            <span>自己</span>
+            <span class="seat-score"><strong>52</strong></span>
+          </header>
+          <div class="card-grid">
+            <div class="card" data-name="鹰"><span class="label">鹰</span><span class="count">0</span></div>
+            <div class="card" data-name="大王"><span class="label">大王</span><span class="count">0</span></div>
+            <div class="card" data-name="小王"><span class="label">小王</span><span class="count">0</span></div>
+            <div class="card" data-name="2"><span class="label">2</span><span class="count">0</span></div>
+            <div class="card" data-name="A"><span class="label">A</span><span class="count">0</span></div>
+            <div class="card" data-name="K"><span class="label">K</span><span class="count">0</span></div>
+            <div class="card" data-name="Q"><span class="label">Q</span><span class="count">0</span></div>
+            <div class="card" data-name="J"><span class="label">J</span><span class="count">0</span></div>
+            <div class="card" data-name="10"><span class="label">10</span><span class="count">0</span></div>
+            <div class="card" data-name="9"><span class="label">9</span><span class="count">0</span></div>
+            <div class="card" data-name="8"><span class="label">8</span><span class="count">0</span></div>
+            <div class="card" data-name="7"><span class="label">7</span><span class="count">0</span></div>
+            <div class="card" data-name="6"><span class="label">6</span><span class="count">0</span></div>
+            <div class="card" data-name="5"><span class="label">5</span><span class="count">0</span></div>
+            <div class="card" data-name="4"><span class="label">4</span><span class="count">0</span></div>
+            <div class="card" data-name="3"><span class="label">3</span><span class="count">0</span></div>
+          </div>
+        </article>
+
+        <article class="seat">
+          <header class="seat-header">
+            <span>下家</span>
+            <span class="seat-score"><strong>52</strong></span>
+          </header>
+          <div class="card-grid">
+            <div class="card" data-name="鹰"><span class="label">鹰</span><span class="count">0</span></div>
+            <div class="card" data-name="大王"><span class="label">大王</span><span class="count">0</span></div>
+            <div class="card" data-name="小王"><span class="label">小王</span><span class="count">0</span></div>
+            <div class="card" data-name="2"><span class="label">2</span><span class="count">0</span></div>
+            <div class="card" data-name="A"><span class="label">A</span><span class="count">0</span></div>
+            <div class="card" data-name="K"><span class="label">K</span><span class="count">0</span></div>
+            <div class="card" data-name="Q"><span class="label">Q</span><span class="count">0</span></div>
+            <div class="card" data-name="J"><span class="label">J</span><span class="count">0</span></div>
+            <div class="card" data-name="10"><span class="label">10</span><span class="count">0</span></div>
+            <div class="card" data-name="9"><span class="label">9</span><span class="count">0</span></div>
+            <div class="card" data-name="8"><span class="label">8</span><span class="count">0</span></div>
+            <div class="card" data-name="7"><span class="label">7</span><span class="count">0</span></div>
+            <div class="card" data-name="6"><span class="label">6</span><span class="count">0</span></div>
+            <div class="card" data-name="5"><span class="label">5</span><span class="count">0</span></div>
+            <div class="card" data-name="4"><span class="label">4</span><span class="count">0</span></div>
+            <div class="card" data-name="3"><span class="label">3</span><span class="count">0</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
