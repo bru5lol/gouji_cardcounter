@@ -304,16 +304,86 @@ body {
   }
 }
 
+/* 모바일: 6자리 전부 한 화면에 */
 @media (max-width: 760px) {
   .page {
-    padding: 14px;
+    padding: 6px;
+  }
+
+  .hero {
+    gap: 4px;
+    margin-bottom: 6px;
+  }
+
+  .reset-btn {
+    padding: 3px 10px;
+    font-size: 0.75rem;
+    border-radius: 7px;
+  }
+
+  .summary-row {
+    gap: 3px;
+  }
+
+  .summary-item {
+    padding: 3px 5px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+  }
+
+  .summary-item span {
+    font-size: 0.7rem;
+  }
+
+  .board,
+  .seat-row {
+    gap: 5px;
   }
 
   .seat-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .seat {
+    padding: 4px;
+    border-radius: 8px;
+    box-shadow: none;
+  }
+
+  .seat-header {
+    margin-bottom: 4px;
+    gap: 4px;
+  }
+
+  .seat-header span:first-child {
+    font-size: 0.75rem;
+  }
+
+  .seat-score {
+    padding: 1px 6px;
+    font-size: 0.72rem;
+  }
+
+  .card-grid {
+    gap: 2px;
   }
 
   .card {
-    min-height: 72px;
+    min-height: 0;
+    padding: 2px 0;
+    gap: 0;
+    border-radius: 5px;
+    justify-items: center;
+    grid-template-rows: auto auto;
+  }
+
+  .card .label {
+    font-size: 0.6rem;
+    white-space: nowrap;
+  }
+
+  .card .count {
+    font-size: 0.85rem;
+    line-height: 1.1;
   }
 }
