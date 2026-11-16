@@ -298,9 +298,95 @@ body {
   touch-action: manipulation;
 }
 
+/* 태블릿/모바일: 화면 높이에 딱 맞추고 스크롤 없음 */
 @media (max-width: 1160px) {
+  body {
+    min-height: 0;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  .page {
+    height: 100vh;
+    height: 100dvh;
+    max-width: none;
+    padding: 10px 10px calc(10px + env(safe-area-inset-bottom));
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero {
+    flex: none;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  .summary-item {
+    padding: 4px 8px;
+  }
+
+  .board {
+    flex: 1;
+    min-height: 0;
+    gap: 8px;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
   .seat-row {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-height: 0;
+    gap: 8px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .seat {
+    min-height: 0;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+  }
+
+  .seat-header {
+    flex: none;
+    margin-bottom: 4px;
+  }
+
+  .seat-header span:first-child {
+    font-size: clamp(0.72rem, 2vh, 1rem);
+  }
+
+  .seat-score {
+    padding: 1px 8px;
+    font-size: clamp(0.7rem, 1.9vh, 0.95rem);
+  }
+
+  .card-grid {
+    flex: 1;
+    min-height: 0;
+    gap: 3px;
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
+
+  .card {
+    min-height: 0;
+    padding: 0;
+    gap: 0;
+    overflow: hidden;
+    justify-items: center;
+    align-content: center;
+    grid-template-rows: auto auto;
+  }
+
+  .card .label {
+    font-size: clamp(0.55rem, 1.7vh, 0.95rem);
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+
+  .card .count {
+    font-size: clamp(0.75rem, 2.6vh, 1.4rem);
+    line-height: 1.1;
   }
 }
 
@@ -331,8 +417,14 @@ body {
     font-size: 0.7rem;
   }
 
+  .summary-item {
+    padding: 3px 4px;
+    gap: 2px;
+  }
+
   .summary-item span {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
+    white-space: nowrap;
   }
 
   .board,
@@ -355,35 +447,11 @@ body {
     gap: 4px;
   }
 
-  .seat-header span:first-child {
-    font-size: 0.75rem;
-  }
-
-  .seat-score {
-    padding: 1px 6px;
-    font-size: 0.72rem;
-  }
-
   .card-grid {
     gap: 2px;
   }
 
   .card {
-    min-height: 0;
-    padding: 2px 0;
-    gap: 0;
     border-radius: 5px;
-    justify-items: center;
-    grid-template-rows: auto auto;
-  }
-
-  .card .label {
-    font-size: 0.6rem;
-    white-space: nowrap;
-  }
-
-  .card .count {
-    font-size: 0.85rem;
-    line-height: 1.1;
   }
 }
