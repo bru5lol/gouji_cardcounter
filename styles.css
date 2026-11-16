@@ -298,19 +298,21 @@ body {
   touch-action: manipulation;
 }
 
-/* 태블릿/모바일: 화면 높이에 딱 맞추고 스크롤 없음 */
-@media (max-width: 1160px) {
+/* 모든 화면: 높이에 딱 맞추고 스크롤 없음 */
+@media all {
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+
   body {
     min-height: 0;
-    height: 100vh;
-    height: 100dvh;
-    overflow: hidden;
   }
 
   .page {
-    height: 100vh;
-    height: 100dvh;
-    max-width: none;
+    height: 100%;
     padding: 10px 10px calc(10px + env(safe-area-inset-bottom));
     display: flex;
     flex-direction: column;
